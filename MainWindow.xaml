@@ -4,9 +4,69 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:just_economy"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1200">
-    <Grid>
+        WindowStartupLocation="CenterScreen" 
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Title="MainWindow">
 
-    </Grid>
+        <Grid Name="grid_principal"
+          Height="720" 
+          Width="1200"
+          Background="Transparent">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Background="White"
+                    CornerRadius="12 0 0 12"
+                    Grid.Column="0">
+
+            <Grid Name="grid_principal_painelEsquerdo">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <Label Style="{DynamicResource Label_título}"
+                       Content="ECONOMIZE"/>
+
+                <Border Style="{DynamicResource Border_imagem}"/>
+
+                <Border Style="{DynamicResource Border_menu}"
+                        Grid.Row="3">
+                    <Label Style="{DynamicResource Label_menu}"
+                           Content="CU DO CARALHO"/>
+
+                </Border>
+
+            </Grid>                
+                
+            </Border>
+
+            <Border Background="Gray"
+                    CornerRadius="0 12 12 0"
+                    Grid.Column="1">
+                <Grid Name="grid_principal_areaDeTrabalho"/>
+            </Border>
+            
+
+        </Grid>
+    
 </Window>
+    
+
