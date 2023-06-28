@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Transactions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -18,19 +16,13 @@ using System.Windows.Shapes;
 namespace just_economy
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interação lógica para frmGrupos.xam
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class frmGrupos : UserControl
     {
-        public MainWindow()
+        public frmGrupos()
         {
             InitializeComponent();
-
-            //frmInício frmInício = new frmInício();
-            frmExtratos frmInício = new frmExtratos();
-
-            grid_principal_areaDeTrabalho.Children.Add(frmInício);
         }
-
-    }       
+    }
 }

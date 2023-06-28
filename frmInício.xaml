@@ -1,0 +1,132 @@
+﻿<UserControl x:Class="just_economy.frmInício"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:just_economy">
+
+    <Grid Name="Grid_Principal"
+          Background="Transparent"
+          Width="1060"
+          Height="700">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Name="Grid_Principal_Valores"
+              Grid.Row="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border CornerRadius="12" 
+                    Margin="10"
+                    Background="White"
+                    Grid.Column="0">
+
+                <Grid Name="Grid_Principal_Valores_Saldo">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Name="Label_Saldo"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Margin="20, 0, 0, 0"
+                           FontSize="32"
+                           Grid.Row="0"
+                           Content="Saldo"/>
+
+                    <Label Name="Label_Saldo_Cifrão"
+                           FontWeight="SemiBold"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Margin="20, 0, 0, 0"
+                           FontSize="72"
+                           Grid.Row="1"
+                           Content="R$"/>
+
+                    <Label Name="Label_Saldo_Valor"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           FontWeight="SemiBold"
+                           Margin="0, 0, 20, 0"
+                           FontSize="72"
+                           Grid.Row="1"
+                           Content="0,00"/>
+
+                </Grid>
+
+            </Border>
+
+            <Border CornerRadius="12" Background="White"
+                    Margin="10"
+                    Grid.Column="1">
+
+                <Grid Name="Grid_Principal_Valores_Gastos">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Name="Label_Gastos"
+                           Foreground="#FFFF3939"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Margin="20, 0, 0, 0"
+                           FontSize="32"
+                           Grid.Row="0"
+                           Content="Gastos"/>
+
+                    <Label Name="Label_Gastos_Cifrão"
+                           Foreground="#FFFF3939"
+                           FontWeight="SemiBold"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Margin="20, 0, 0, 0"
+                           FontSize="72"
+                           Grid.Row="1"
+                           Content="R$"/>
+
+                    <Label Name="Label_Gastos_Valor"
+                           Foreground="#FFFF3939"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           FontWeight="SemiBold"
+                           Margin="0, 0, 20, 0"
+                           FontSize="72"
+                           Grid.Row="1"
+                           Content="0,00"/>
+
+                </Grid>
+
+            </Border>
+
+        </Grid>
+
+        <Border CornerRadius="12" Background="White"
+                    Margin="10"
+                    Grid.Row="1">
+
+            <Grid Name="Grid_Principal_Transações"
+                  Margin="20">
+
+                <DataGrid x:Name="dataGrid"
+                          Height="0"
+                          Width="0"
+                          HorizontalAlignment="Stretch" 
+                          VerticalAlignment="Stretch" 
+                          BorderBrush="Transparent"/>
+
+            </Grid>
+        </Border>
+
+    </Grid>
+</UserControl>

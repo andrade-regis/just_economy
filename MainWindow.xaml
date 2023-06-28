@@ -13,7 +13,7 @@
 
         <Grid Name="grid_principal"
           Height="720" 
-          Width="1200"
+          Width="1280"
           Background="Transparent">
 
             <Grid.ColumnDefinitions>
@@ -47,10 +47,53 @@
 
                 <Border Style="{DynamicResource Border_imagem}"/>
 
-                <Border Style="{DynamicResource Border_menu}"
+                <Border Name="Border_Inicio" 
+                        Style="{DynamicResource Border_menu}"
                         Grid.Row="3">
-                    <Label Style="{DynamicResource Label_menu}"
-                           Content="CU DO CARALHO"/>
+
+                    <Label Name="Label_Inicio"                          
+                           Style="{DynamicResource Label_menu}"
+                           Content="Inicio"/>
+
+                </Border>
+
+                <Border Name="Border_Extratos" 
+                        Style="{DynamicResource Border_menu}"
+                        Grid.Row="4">
+
+                    <Label Name="Label_Extratos"                          
+                           Style="{DynamicResource Label_menu}"
+                           Content="Extratos"/>
+
+                </Border>
+
+                <Border Name="Border_Grupos" 
+                        Style="{DynamicResource Border_menu}"
+                        Grid.Row="5">
+
+                    <Label Name="Label_Grupos"                          
+                           Style="{DynamicResource Label_menu}"
+                           Content="Grupos"/>
+
+                </Border>
+
+                <Border Name="Border_Ajustes" 
+                        Style="{DynamicResource Border_menu}"
+                        Grid.Row="6">
+
+                    <Label Name="Label_Ajustes"                          
+                           Style="{DynamicResource Label_menu}"
+                           Content="Ajustes"/>
+
+                </Border>
+
+                <Border Name="Border_Sair" 
+                        Style="{DynamicResource Border_Sair}"
+                        Grid.Row="8">
+
+                    <Label Name="Label_Sair"                          
+                           Style="{DynamicResource Label_menu}"
+                           Content="Sair"/>
 
                 </Border>
 
@@ -58,10 +101,12 @@
                 
             </Border>
 
-            <Border Background="Gray"
+        <Border Background="#EAEAEA"
                     CornerRadius="0 12 12 0"
                     Grid.Column="1">
-                <Grid Name="grid_principal_areaDeTrabalho"/>
+                <Grid Name="grid_principal_areaDeTrabalho"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"/>
             </Border>
             
 
