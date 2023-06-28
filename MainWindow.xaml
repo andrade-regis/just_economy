@@ -11,17 +11,17 @@
         Background="Transparent"
         Title="MainWindow">
 
-        <Grid Name="grid_principal"
+    <Grid Name="grid_principal"
           Height="720" 
           Width="1280"
           Background="Transparent">
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-            <Border Background="White"
+        <Border Background="White"
                     CornerRadius="12 0 0 12"
                     Grid.Column="0">
 
@@ -88,7 +88,7 @@
                 </Border>
 
                 <Border Name="Border_Sair" 
-                        Style="{DynamicResource Border_Sair}"
+                        Style="{DynamicResource Border_Menu_Sair}"
                         Grid.Row="8">
 
                     <Label Name="Label_Sair"                          
@@ -97,21 +97,22 @@
 
                 </Border>
 
-            </Grid>                
-                
-            </Border>
+            </Grid>
+
+        </Border>
 
         <Border Background="#EAEAEA"
-                    CornerRadius="0 12 12 0"
-                    Grid.Column="1">
-                <Grid Name="grid_principal_areaDeTrabalho"
-                      HorizontalAlignment="Center"
-                      VerticalAlignment="Center"/>
-            </Border>
-            
+                CornerRadius="0 12 12 0"
+                Grid.Column="1">
 
-        </Grid>
-    
+            <Grid Name="grid_principal_areaDeTrabalho"
+                  HorizontalAlignment="Center"
+                  VerticalAlignment="Center"/>
+        </Border>
+
+
+    </Grid>
+
 </Window>
     
 

@@ -15,10 +15,9 @@
             <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
 
-        <Border CornerRadius="12" 
+        <Border Style="{StaticResource Border_Background}"
                 Margin="10"
-                Grid.Row="0"
-                Background="White">
+                Grid.Row="0">
 
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -29,10 +28,9 @@
 
                 <Label Content="Referência:"
                        VerticalAlignment="Center"
-                       FontFamily="Segoe UI"
+                       Style="{StaticResource Label_Conteúdo}"
                        Margin="5, 0, 0, 0"
                        Grid.Column="0"
-                       FontSize="16"
                        HorizontalAlignment="Center"/>
 
                 <TextBox x:Name="Text_Referência"
@@ -41,28 +39,24 @@
                          BorderThickness="0, 0, 0, 1"
                          HorizontalAlignment="Left"
                          VerticalAlignment="Center"
-                         FontFamily="Segoe UI"
+                         Style="{StaticResource TextBox_Conteúdo}"
                          BorderBrush="Gray"
                          Grid.Column="1"
-                         FontSize="16"
                          MaxLength="7"
                          Text="06/2023" Width="70"/>
 
-                <Border CornerRadius="12" 
-                        Grid.Column="2"
+                <Border Grid.Column="2"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Right"
                         Margin="0, 0, 3, 0"
-                        Background="Green">
+                        Style="{StaticResource Border_Botão_Green}">
 
                     <Label Content="Carregar"
-                       VerticalAlignment="Center"
-                       FontFamily="Segoe UI"
-                       Margin="10, 0, 10, 0"
-                       Grid.Column="0"
-                       FontSize="16"
-                       Foreground="White"
-                       HorizontalAlignment="Center"/>
+                           VerticalAlignment="Center"
+                           Style="{StaticResource Label_Botão_Green}"
+                           Margin="10, 0, 10, 0"
+                           Grid.Column="0"
+                           HorizontalAlignment="Center"/>
 
                 </Border>
 
@@ -71,32 +65,27 @@
 
         </Border>
 
-        <Border CornerRadius="12" 
+        <Border Style="{StaticResource Border_Background}"
                 Margin="10"
-                Grid.Row="1"
-                Background="White">
+                Grid.Row="1">
 
         </Border>
 
-        <Border CornerRadius="12" 
+        <Border Style="{StaticResource Border_Background}"
                 Margin="10"
-                Grid.Row="2"
-                Background="White">
+                Grid.Row="2">
 
-            <Border CornerRadius="12" 
+            <Border Style="{StaticResource Border_Botão_Green}"
                         Grid.Column="2"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Right"
-                        Margin="0, 0, 3, 0"
-                        Background="Green">
+                        Margin="0, 0, 3, 0">
 
                 <Label Content="Adicionar Transação +"
                        VerticalAlignment="Center"
                        Margin="10, 0, 10, 0"
                        Grid.Column="0"
-                       FontSize="16"
-                       FontFamily="Segoe UI"
-                       Foreground="White"
+                       Style="{StaticResource Label_Botão_Green}"
                        HorizontalAlignment="Center"/>
 
             </Border>

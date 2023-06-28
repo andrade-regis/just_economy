@@ -23,9 +23,8 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Border CornerRadius="12" 
+            <Border Style="{StaticResource Border_Background}"
                     Margin="10"
-                    Background="White"
                     Grid.Column="0">
 
                 <Grid Name="Grid_Principal_Valores_Saldo">
@@ -65,7 +64,7 @@
 
             </Border>
 
-            <Border CornerRadius="12" Background="White"
+            <Border Style="{StaticResource Border_Background}"
                     Margin="10"
                     Grid.Column="1">
 
@@ -111,7 +110,7 @@
 
         </Grid>
 
-        <Border CornerRadius="12" Background="White"
+        <Border Style="{StaticResource Border_Background}"
                     Margin="10"
                     Grid.Row="1">
 

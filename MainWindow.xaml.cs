@@ -27,7 +27,7 @@ namespace just_economy
             InitializeComponent();
 
             //frmInício frmInício = new frmInício();
-            frmExtratos frmInício = new frmExtratos();
+            frmGrupos frmInício = new frmGrupos();
 
             grid_principal_areaDeTrabalho.Children.Add(frmInício);
         }
